@@ -11,6 +11,8 @@ package bsp1;
  */
 public class Main {
 
+    static final int dividend = 0;
+
     public static void main(String[] args) {
         Input inpt = new Input();
         inpt.readCSV();

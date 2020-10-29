@@ -11,9 +11,22 @@ package bsp1;
  */
 public class MyRunnable implements Runnable {
 
+    final int numbFrom;
+    final int numbTo;
+    Input inpt = new Input();
+
+    public MyRunnable(int numbFrom, int numbTo) {
+        this.numbFrom = numbFrom;
+        this.numbTo = numbTo;
+    }
+
     @Override
     public void run() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        for (int i = numbFrom; i <= numbTo; i++) {
+            if (inpt.numbers.get(i) % Main.dividend == 0) {
+                System.out.println(i);
+            }
+        }
     }
 
 }
