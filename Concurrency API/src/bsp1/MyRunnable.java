@@ -13,7 +13,6 @@ public class MyRunnable implements Runnable {
 
     final int numbFrom;
     final int numbTo;
-    Input inpt = new Input();
 
     public MyRunnable(int numbFrom, int numbTo) {
         this.numbFrom = numbFrom;
@@ -22,8 +21,8 @@ public class MyRunnable implements Runnable {
 
     @Override
     public void run() {
-        for (int i = numbFrom; i <= numbTo; i++) {
-            if (inpt.numbers.get(i) % Main.dividend == 0) {
+        for (int i = numbFrom; i < numbTo; i++) {
+            if (Input.numbers.get(i) % Main.dividend == 0) {
                 System.out.println(i);
             }
         }

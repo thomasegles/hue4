@@ -20,9 +20,9 @@ import java.util.logging.Logger;
  */
 public class Input {
 
-    ArrayList<Integer> numbers = new ArrayList();
+    static ArrayList<Integer> numbers = new ArrayList();
 
-    public void readCSV() {
+    public static void readCSV() {
         try {
             BufferedReader br = new BufferedReader(new FileReader(new File("numbers.csv")));
             String strNumb = br.readLine();
@@ -37,7 +37,7 @@ public class Input {
         }
     }
 
-    public void checkNumb(String line) {
+    public static void checkNumb(String line) {
         String[] spltLine = line.split(":");
         for (int i = 0; i < spltLine.length; i++) {
             if (spltLine[i] != null) {
