@@ -14,9 +14,9 @@ public class Main {
     public static void main(String[] args) {
         Input inpt = new Input();
         inpt.readCSV();
-        for (Integer number : inpt.numbers) {
-            System.out.println(number);
-        }
+        inpt.numbers.forEach((number) -> {
+            System.out.print(number + ";");
+        });
     }
 
 }

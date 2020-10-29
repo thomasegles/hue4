@@ -37,8 +37,6 @@ public class Input {
         }
     }
 
-    //checkNumb Methode eventuell entfernen commit machen und wieder hinzufügen und nocheinmal einen commit machen,
-    //außer von der klasse wurde schon ein commit mit chekcnumb darin gemacht.
     public void checkNumb(String line) {
         String[] spltLine = line.split(":");
         for (int i = 0; i < spltLine.length; i++) {
@@ -56,5 +54,4 @@ public class Input {
             }
         }
     }
-
 }
